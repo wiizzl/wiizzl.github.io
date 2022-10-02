@@ -142,11 +142,11 @@ body::before {
 }
 .profile-card__social a.youtube {
   background: linear-gradient(45deg, #5b6063, #333333);
-  box-shadow: 0 4px 40px rgba(197, 21, 21, 0.5);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.7);
 }
 .profile-card__social a.discord {
   background: linear-gradient(45deg, #5b6063, #333333);
-  box-shadow: 0 4px 40px rgba(19, 127, 212, 0.7);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.7);
 }
 .profile-card__social a.github {
   background: linear-gradient(45deg, #5b6063, #333333);
@@ -193,15 +193,15 @@ body::before {
 }
 .profile-card__actions > button.blue {
   background: linear-gradient(45deg, #5b6063, #333333);
-  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
 }
 .profile-card__actions > button.blue:hover {
-  box-shadow: 0 7px 30px rgba(19, 127, 212, 0.4);
+  box-shadow: 0 7px 30px rgba(0, 0, 0, 0.7);
 }
 .profile-card__actions > button.orange {
-  background: linear-gradient(45deg, #d5135a, #f05924);
-  box-shadow: 0 4px 30px rgba(223, 45, 70, 0.35);
+  background: linear-gradient(45deg, #5b6063, #333333);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
 }
 .profile-card__actions > button.orange:hover {
-  box-shadow: 0 7px 30px rgba(223, 45, 70, 0.35);
+  box-shadow: 0 7px 30px rgba(0, 0, 0, 0.7);
 }/*# sourceMappingURL=style.css.map */
