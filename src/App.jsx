@@ -1,6 +1,6 @@
 import './css/App.css'
 
-import { createBrowserRouter, RouterProvider, Outlet, useRouteError, useLocation} from 'react-router-dom';
+import { createHashRouter, RouterProvider, Outlet, useRouteError, useLocation} from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { Accueil, Seconde, Premiere, Terminale, Outils } from './pages';
@@ -34,7 +34,7 @@ import { Conditions, Dico, Fonctions } from './pages';
 
 import { Footer, Navbar } from './tools';
 
-const browserRouter = createBrowserRouter([
+const browserRouter = createHashRouter([
     {
         path: '',
         element: <Root/>,
