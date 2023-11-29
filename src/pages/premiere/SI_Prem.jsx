@@ -40,7 +40,7 @@ export function SI_Prem() {
                 <NavLink to="energetique">
                     <Card image={energetique} name="Energétique" description="Dans ce chapitre, nous allons particulièrement nous intéresser aux différents types d'énergies ainsi q u'à la façon dont on peut la stocker."/>
                 </NavLink>
-                <NavLink to="objets">
+                <NavLink to="objetsconnectes">
                     <Card image={objets} name="Objets connectés" description="Dans ce chapitre, nous allons étudier comment les objets captent, stockent, traitent et transmettent des données, recevoir et donner des instructions un réseau appelé Internet of Things (IoT)."/>
                 </NavLink>
             </div>

@@ -61,7 +61,7 @@ const browserRouter = createHashRouter([
                             {path: 'photographie', element: <Photographie/>},
                             {path: 'cartographie', element: <Cartographie/>},
                             {path: 'reseauxsociaux', element: <ReseauxSociaux/>},
-                            {path: 'objetsconnectes', element: <Objets/>},
+                            {path: 'objets', element: <Objets/>},
                             {path: 'histoire', element: <Histoire/>}
                         ],
                     },
@@ -84,7 +84,7 @@ const browserRouter = createHashRouter([
                             {path: 'can', element: <Can/>},
                             {path: 'communication', element: <Communication/>},
                             {path: 'energetique', element: <Energetique/>},
-                            {path: 'objets', element: <ObjetsConnectes/>}
+                            {path: 'objetsconnectes', element: <ObjetsConnectes/>}
                         ],
                     },
                 ]
