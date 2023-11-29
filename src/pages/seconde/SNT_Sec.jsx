@@ -76,7 +76,7 @@ export function ReseauxSociaux() {
     return <FileReader folder={"seconde/snt"} fileName={"Réseaux sociaux"}/>
 }
 
-export function ObjetsConnectes() {
+export function Objets() {
     return <FileReader folder={"seconde/snt"} fileName={"Objets connectés"}/>
 }
 

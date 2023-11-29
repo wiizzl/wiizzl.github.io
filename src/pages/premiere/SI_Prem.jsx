@@ -72,6 +72,6 @@ export function Energetique() {
     return <FileReader folder={"premiere/si"} fileName={"Energétique"}/>
 }
 
-export function Objets() {
+export function ObjetsConnectes() {
     return <FileReader folder={"terminale/si"} fileName={"Objets connectés"}/>
 }

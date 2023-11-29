@@ -6,13 +6,13 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Accueil, Seconde, Premiere, Terminale, Outils } from './pages';
 
 import { SNT_Sec } from './pages';
-import { Internet, Web, Donnees, Photographie, Cartographie, ReseauxSociaux, ObjetsConnectes, Histoire}  from './pages';
+import { Internet, Web, Donnees, Photographie, Cartographie, ReseauxSociaux, Objets, Histoire}  from './pages';
 
 import { SI_Prem } from './pages';
-import { Electricite, Signaux, Numeration, Can, Communication, Energetique } from './pages';
+import { Electricite, Signaux, Numeration, Can, Communication, Energetique, ObjetsConnectes } from './pages';
 
 import { SI_Term } from './pages';
-import { Asservissement, Reseaux, Objets, Modulation, GraphesEtats } from './pages';
+import { Asservissement, Reseaux, Modulation, GraphesEtats } from './pages';
 
 import { NSI_Term } from './pages';
 import { Routage, Processus, Puce, Modularite, Graphes, Arbres, Cryptographie, Diviser } from './pages';
@@ -61,7 +61,7 @@ const browserRouter = createHashRouter([
                             {path: 'photographie', element: <Photographie/>},
                             {path: 'cartographie', element: <Cartographie/>},
                             {path: 'reseauxsociaux', element: <ReseauxSociaux/>},
-                            {path: 'objetsconnectes', element: <ObjetsConnectes/>},
+                            {path: 'objetsconnectes', element: <Objets/>},
                             {path: 'histoire', element: <Histoire/>}
                         ],
                     },
@@ -84,7 +84,7 @@ const browserRouter = createHashRouter([
                             {path: 'can', element: <Can/>},
                             {path: 'communication', element: <Communication/>},
                             {path: 'energetique', element: <Energetique/>},
-                            {path: 'objets', element: <Objets/>}
+                            {path: 'objets', element: <ObjetsConnectes/>}
                         ],
                     },
                 ]
@@ -190,7 +190,7 @@ function PageError() {
     return <>
         <main className="background">
             <div className="errorpage">
-                <h1 className="">&#x26A0; Une erreur est survenue &#x26A0;</h1>
+                <h1>&#x26A0; Une erreur est survenue &#x26A0;</h1>
                 <p>Merci de revenir en arrière</p>
             </div>
         </main>
