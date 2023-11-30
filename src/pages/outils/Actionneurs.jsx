@@ -33,13 +33,13 @@ export function Actionneurs() {
 }
 
 export function Oled() {
-    return <FileReader folder={"outils/capteurs"} fileName={"Afficheur OLED"}/>
+    return <FileReader folder={"outils/actionneurs"} fileName={"Afficheur OLED"}/>
 }
 
 export function Servomoteur() {
-    return <FileReader folder={"outils/capteurs"} fileName={"Servomoteur"}/>
+    return <FileReader folder={"outils/actionneurs"} fileName={"Servomoteur"}/>
 }
 
 export function Relais() {
-    return <FileReader folder={"outils/capteurs"} fileName={"Module relais"}/>
+    return <FileReader folder={"outils/actionneurs"} fileName={"Module relais"}/>
 }

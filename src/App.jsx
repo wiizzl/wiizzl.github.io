@@ -34,7 +34,7 @@ import { Conditions, Dico, Fonctions } from './pages';
 
 import { Footer, Navbar } from './tools';
 
-const browserRouter = createHashRouter([
+const hashRouter = createHashRouter([
     {
         path: '',
         element: <Root/>,
@@ -191,7 +191,7 @@ function PageError() {
         <main className="background">
             <div className="errorpage">
                 <h1>&#x26A0; Une erreur est survenue &#x26A0;</h1>
-                <p>Merci de revenir en arrière</p>
+                <p>Merci de revenir en arrière ou de cliquer <a href="/"><u>ici</u></a></p>
             </div>
         </main>
     </>
@@ -220,6 +220,6 @@ function Root() {
 
 export default function App() {
     return <>
-        <RouterProvider router={browserRouter}></RouterProvider>
+        <RouterProvider router={hashRouter}></RouterProvider>
     </>
 }
