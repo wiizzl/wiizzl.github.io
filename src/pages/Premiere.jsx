@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Card } from '../tools/Card';
-import si from '../assets/si.jpg';
+import si from '../assets/premiere/si.jpg';
 
 export function Premiere() {
     return <>

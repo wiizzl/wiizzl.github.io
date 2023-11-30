@@ -1,7 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import { Card } from '../tools/Card';
-import si from '../assets/si.jpg';
-import nsi from '../assets/nsi.jpg'
+
+import si from '../assets/terminale/si.jpg';
+import nsi from '../assets/terminale/nsi.jpg';
+import geo from '../assets/terminale/geo.jpg';
 
 export function Terminale() {
     return <>
@@ -18,6 +20,9 @@ export function Terminale() {
                 </NavLink>
                 <NavLink to="nsi_term">
                     <Card image={nsi} name="Numérique et Science de l'Info" description="Vous retrouverez ici l'ensemble des thèmes étudiés en NSI."/>
+                </NavLink>
+                <NavLink to="geo_term">
+                    <Card image={geo} name="Géographie" description="Vous retrouverez ici l'ensemble des thèmes étudiés en Géo."/>
                 </NavLink>
             </div>
         </main>

@@ -17,6 +17,9 @@ import { Asservissement, Reseaux, Modulation, GraphesEtats } from './pages';
 import { NSI_Term } from './pages';
 import { Routage, Processus, Puce, Modularite, Graphes, Arbres, Cryptographie, Diviser } from './pages';
 
+import { Geo_Term } from './pages';
+import { Mers, Maritime, Mondialisation, Rayonnement, Union, Region} from './pages';
+
 import { Micro } from './pages';
 import { Raspberry, Microbit, Esp, Arduino } from './pages';
 
@@ -118,6 +121,18 @@ const hashRouter = createHashRouter([
                             {path: 'arbres', element: <Arbres/>},
                             {path: 'cryptographie', element: <Cryptographie/>},
                             {path: 'diviser', element: <Diviser/>}
+                        ],
+                    },
+                    {
+                        path: 'geo_term',
+                        children: [
+                            {path: '', element: <Geo_Term/>},
+                            {path: 'mers', element: <Mers/>},
+                            {path: 'maritime', element: <Maritime/>},
+                            {path: 'mondialisation', element: <Mondialisation/>},
+                            {path: 'rayonnement', element: <Rayonnement/>},
+                            {path: 'union', element: <Union/>},
+                            {path: 'region', element: <Region/>},
                         ],
                     },
                 ]
