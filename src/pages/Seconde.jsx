@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Card } from '../tools/Card';
+
 import snt from '../assets/seconde/snt.jpg';
 
 export function Seconde() {
