@@ -1,8 +1,7 @@
 import 'katex/dist/katex.min.css'
 
 import { useState, useEffect, useRef } from 'react';
-import { initializeApp } from 'firebase/app';
-import { getStorage, ref, uploadString, getMetadata, getDownloadURL } from 'firebase/storage';
+import { ref, uploadString, getMetadata, getDownloadURL } from 'firebase/storage';
 import { Prism } from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import Markdown from 'react-markdown';
@@ -12,18 +11,9 @@ import remarkToc from 'remark-toc';
 import rehypeRaw from 'rehype-raw';
 import rehypeKatex from 'rehype-katex';
 
+import { storage } from '../FirebaseConfig';
+
 export function MarkdownViewer({ folder, fileName }) {
-    const firebaseConfig = {
-        apiKey: "AIzaSyA-VBtHJsaUbNGuJcsB-19BDJVQ3yQBiyA",
-        authDomain: "info-galilee-62e91.firebaseapp.com",
-        projectId: "info-galilee-62e91",
-        storageBucket: "info-galilee-62e91.appspot.com",
-        messagingSenderId: "991174717659",
-        appId: "1:991174717659:web:04c984d229bef73b9e9cfe",
-        measurementId: "G-HTSKVFFFZN"
-    }
-    const app = initializeApp(firebaseConfig);
-    const storage = getStorage(app);
     const [fileExists, setFileExists] = useState(false);
     const [fileContent, setFileContent] = useState('');
     const fileInputRef = useRef(null);
@@ -48,7 +38,7 @@ export function MarkdownViewer({ folder, fileName }) {
             }
         }
         checkFileExistence();
-    }, [folder, fileName, storage, fileExists])
+    }, [folder, fileName, fileExists])
     const handleFileChange = async (event) => {
         const file = event.target.files[0]
         if (file) {
@@ -80,7 +70,7 @@ export function MarkdownViewer({ folder, fileName }) {
                         <div className="md-button">
                             <button style={{ marginRight: '0.5rem' }} onClick={handleDownload}>Télécharger</button>
                             <button onClick={handleButtonClick}>Modifier</button>
-                            <input style={{ display: "none" }} type="file" accept=".md" ref={fileInputRef} onChange={handleFileChange}/>
+                            <input style={{ display: "none"}} type="file" accept=".md" ref={fileInputRef} onChange={handleFileChange}/>
                         </div>
                     </div>
                     <div className="md-style">
